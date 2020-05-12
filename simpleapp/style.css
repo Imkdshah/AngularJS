@@ -1,0 +1,58 @@
+.main{
+    width: 500px;
+    text-align: center;
+    margin: 0;
+    border: 2px solid #000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+h1{
+
+    padding: 30px ;
+    margin-top: 0px;
+
+}
+
+ul{
+
+    list-style: none;
+    font-size: 20px;
+    margin-left: -40px;
+    margin-bottom: 0px;
+    
+}
+
+li{
+
+        border-bottom: 1px solid #fff;
+        background-color: #f4f4f4;
+        padding: 10px 0px; 
+        margin-bottom: 5px;
+
+}
+
+li span{
+
+    cursor: pointer;
+    position: relative;
+    float: right;
+    margin-right: 10px;
+}
+
+.addItem{
+
+    position: relative;
+    padding-bottom: 0px;
+    height: 30px;
+}
+.addtext{
+    width: 80%;
+    height: 30px;
+
+}
+
+.addItem button{
+    height: 30px;
+    width: 50px;
+}
