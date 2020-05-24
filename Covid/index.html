@@ -16,15 +16,18 @@
 </head>
 
 <!-- World Data -->
+
 <body ng-app="myapp" ng-controller="myctr">
+    <div class="container">
     <div class="jumbotron pd-6">
-    <h3 style="text-align: left;">Worldwide </h3>
         <h1>{{title}}</h1>
+    <h3 style="text-align: left;">Worldwide </h3>
+       
 
 
     <!-- all covid data -->
     
-<div class="container">
+
     <div class="row pt-5">
         <div class="col-md-4 ">
             <div class="card bg-warning text-white" style="width: 20rem; height: 7rem;" >
@@ -51,14 +54,15 @@
             </div>
         </div>
     </div>    
-    </div>
+    
     <hr>
 <!-- End Of World Data -->
 
 <input type="text" class="form-control mt-4" placeholder="Type Country Name Here" ng-model="cases" ng-change="get_cd()">
 <!-- Country-wise Data -->
-<div class="container">
-<div class="row  pt-5">
+<div class="container-fluid" ng-if="cd">
+<h3 style="text-align: left; padding-top: 20px;">Country:{{cases}} </h3>
+<div class="row  pt-5" >
     <div class="col-md-4 ">
         <div class="card bg-warning text-white" style="width: 20rem; height: 7rem;">
             <div class="card-body">
@@ -85,7 +89,7 @@
     </div>
 </div>   
 </div>
-    
+</div>
 <!-- End of Country-wise Data -->
 </div>
 </body>

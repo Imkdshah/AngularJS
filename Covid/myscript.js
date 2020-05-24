@@ -28,6 +28,7 @@ $scope.get_cd = ()=>{
     let country = $scope.cases;
 
     if(country==''){
+        $scope.cd=undefined;
         return;
     }
 
